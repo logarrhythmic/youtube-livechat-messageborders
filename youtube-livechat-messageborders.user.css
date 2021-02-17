@@ -1,0 +1,24 @@
+/* ==UserStyle==
+@name           YouTube live chat message separators
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    Adds message separators and a red moderator message outline to youtube live chat
+@author         logarithm
+==/UserStyle== */
+
+@-moz-document domain("youtube.com") {
+    
+    yt-live-chat-text-message-renderer[author-type=""] {
+        border-bottom: 1px dashed gray;
+    }
+    
+    yt-live-chat-text-message-renderer[author-type="member"] {
+        border-bottom: 1px dashed green;
+    }
+    
+    yt-live-chat-text-message-renderer[author-type="moderator"] {
+        outline: 1px solid red;
+        border-left: 8pt solid red;
+        border-right: 1px solid red;
+    }
+}
