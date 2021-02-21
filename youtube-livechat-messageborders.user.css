@@ -1,53 +1,53 @@
 /* ==UserStyle==
 @name           YouTube live chat message separators
 @namespace      github.com/openstyles/stylus
-@version        1.0.1
+@version        1.0.2
 @description    Adds message separators and a red moderator message outline to youtube live chat
 @author         logarithm
 ==/UserStyle== */
 
 @-moz-document domain("youtube.com") {
     
-    yt-live-chat-paid-message-renderer[style*="--yt-live-chat-paid-message-primary-color:rgba(30,136,229,1)"] {
+    div.yt-live-chat-item-list-renderer>yt-live-chat-paid-message-renderer[style*="--yt-live-chat-paid-message-primary-color:rgba(30,136,229,1)"] {
         border-bottom: 1px dashed rgb(0, 107, 200);
     }
-    yt-live-chat-paid-message-renderer[style*="--yt-live-chat-paid-message-primary-color:rgba(0,229,255,1)"] {
+    div.yt-live-chat-item-list-renderer>yt-live-chat-paid-message-renderer[style*="--yt-live-chat-paid-message-primary-color:rgba(0,229,255,1)"] {
         border-bottom: 1px dashed rgb(0, 172, 192);
     }
-    yt-live-chat-paid-message-renderer[style*="--yt-live-chat-paid-message-primary-color:rgba(29,233,182,1)"] {
+    div.yt-live-chat-item-list-renderer>yt-live-chat-paid-message-renderer[style*="--yt-live-chat-paid-message-primary-color:rgba(29,233,182,1)"] {
         border-bottom: 1px dashed rgb(0, 153, 115);
     }
-    yt-live-chat-paid-message-renderer[style*="--yt-live-chat-paid-message-primary-color:rgba(233,30,99,1)"] {
+    div.yt-live-chat-item-list-renderer>yt-live-chat-paid-message-renderer[style*="--yt-live-chat-paid-message-primary-color:rgba(233,30,99,1)"] {
         border-bottom: 1px dashed rgb(242, 8, 88);
     }
-    yt-live-chat-paid-message-renderer[style*="--yt-live-chat-paid-message-primary-color:rgba(255,202,40,1)"] {
+    div.yt-live-chat-item-list-renderer>yt-live-chat-paid-message-renderer[style*="--yt-live-chat-paid-message-primary-color:rgba(255,202,40,1)"] {
         border-bottom: 1px dashed rgb(192, 146, 0);
     }
-    yt-live-chat-paid-message-renderer[style*="--yt-live-chat-paid-message-primary-color:rgba(245,124,0,1)"] {
+    div.yt-live-chat-item-list-renderer>yt-live-chat-paid-message-renderer[style*="--yt-live-chat-paid-message-primary-color:rgba(245,124,0,1)"] {
         border-bottom: 1px dashed rgb(213, 108, 0);
     }
-    yt-live-chat-paid-message-renderer[style*="--yt-live-chat-paid-message-primary-color:rgba(230,33,23,1)"] {
+    div.yt-live-chat-item-list-renderer>yt-live-chat-paid-message-renderer[style*="--yt-live-chat-paid-message-primary-color:rgba(230,33,23,1)"] {
         border-bottom: 1px dashed rgba(230,33,23,1);
     }
     
-    yt-live-chat-text-message-renderer[author-type=""] {
+    div.yt-live-chat-item-list-renderer>yt-live-chat-text-message-renderer[author-type=""] {
         border-bottom: 1px dashed gray;
     }
     
-    yt-live-chat-membership-item-renderer {
+    div.yt-live-chat-item-list-renderer>yt-live-chat-membership-item-renderer {
         border-bottom: 1px dashed green;
     }
     
-    yt-live-chat-text-message-renderer[author-type="member"] {
+    div.yt-live-chat-item-list-renderer>yt-live-chat-text-message-renderer[author-type="member"] {
         border-bottom: 1px dashed green;
     }
     
-    yt-live-chat-text-message-renderer[author-type="moderator"] {
+    div.yt-live-chat-item-list-renderer>yt-live-chat-text-message-renderer[author-type="moderator"] {
         outline: 1px solid red;
         border-left: 8pt solid red;
         border-right: 1px solid red;
     }
-    yt-live-chat-text-message-renderer[author-type="owner"] {
+    div.yt-live-chat-item-list-renderer>yt-live-chat-text-message-renderer[author-type="owner"] {
         outline: 1px solid yellow;
         border-left: 8pt solid yellow;
         border-right: 1px solid yellow;
