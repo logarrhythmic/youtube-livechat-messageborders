@@ -7,7 +7,9 @@
 ==/UserStyle== */
 
 @-moz-document domain("youtube.com") {
-    
+    div.yt-live-chat-item-list-renderer>yt-live-chat-text-message-renderer {
+        min-height: 24px;
+    }
     div.yt-live-chat-item-list-renderer>yt-live-chat-paid-message-renderer[style*="--yt-live-chat-paid-message-primary-color:rgba(30,136,229,1)"] {
         border-bottom: 1px dashed rgb(0, 107, 200);
     }
